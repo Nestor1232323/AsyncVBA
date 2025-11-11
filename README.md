@@ -10,7 +10,7 @@ AsyncVBA - **Asynchronous** client for Visual Basic For Applications, preferably
 * Excel doesn't freeze
 
 ## How to usage
-Example of code
+Example of **code**:
 ``` vba
 Option Explicit
 
@@ -20,7 +20,6 @@ Dim req As AsyncVBA
 Sub TestAsyncGET()
     Set req = New AsyncVBA
     
-    ' GET request to a public JSON API
     req.SendRequest "https://jsonplaceholder.typicode.com/todos/1", "GET"
     
     Debug.Print "GET request sent asynchronously..."
@@ -39,7 +38,6 @@ Sub TestAsyncPOST()
         "Content-Type: application/json" _
     )
     
-    ' POST request to OpenRouter API
     req.SendRequest "https://openrouter.ai/api/v1/chat/completions", "POST", headers, json
     
     Debug.Print "POST request sent asynchronously..."
@@ -55,7 +53,6 @@ Sub TestAsyncPUT()
     Dim headers As Variant
     headers = Array("Content-Type: application/json")
     
-    ' Example PUT request
     req.SendRequest "https://jsonplaceholder.typicode.com/posts/1", "PUT", headers, data
     
     Debug.Print "PUT request sent asynchronously..."
