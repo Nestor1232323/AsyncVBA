@@ -9,8 +9,9 @@ AsyncVBA - **Asynchronous** client for Visual Basic For Applications, preferably
 * Custom headers
 * Excel doesn't freeze
 
-## How to usage
+## Usage:
 Example of **code**:
+
 ``` vba
 Option Explicit
 
