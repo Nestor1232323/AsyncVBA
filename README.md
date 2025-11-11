@@ -60,3 +60,8 @@ Sub TestAsyncPUT()
 End Sub
 
 ```
+### Quick Start
+You needed a:
+* Import library AsyncVBA
+* Import VBA-JSON library (optional)
+* Add a Reference (Tools > Reference > Microsoft WinHTTP and Microsoft Scripting Runtime)
